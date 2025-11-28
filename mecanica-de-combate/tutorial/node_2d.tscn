@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://comy2wrtobcx7"]
+
+[ext_resource type="Texture2D" uid="uid://dkgg0pyga3x1s" path="res://tutorial/Mauricioidle.png" id="1_j7ten"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0e48y"]
+radius = 50.0
+height = 154.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_j7ten")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+visible = false
+position = Vector2(-2, 0)
+shape = SubResource("CapsuleShape2D_0e48y")

@@ -14,6 +14,10 @@ config/name="Mecanica de Combate"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="Mecanica de Combate"
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
